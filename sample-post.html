@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample post</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+ onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script></head>
+<body><article class="wrap post"><p><a href="../index.html#writing">Back to writing</a></p>
+<h1>A proof of Cauchy–Schwarz</h1>
+<p class="muted">Sample post. Copy this file to write a new one.</p>
+<p><strong>Theorem.</strong> In an inner product space, $|\langle u,v\rangle|\le\|u\|\,\|v\|$.</p>
+<p><em>Proof.</em> If $v=0$ both sides are zero. Otherwise, for every scalar $t$,
+$$0\le\|u-tv\|^2=\|u\|^2-2t\,\mathrm{Re}\langle u,v\rangle+t^2\|v\|^2 .$$
+Choose $t=\mathrm{Re}\langle u,v\rangle/\|v\|^2$ (after rotating $v$ by a unit scalar so that $\langle u,v\rangle$ is real); the right side becomes $\|u\|^2-\langle u,v\rangle^2/\|v\|^2\ge 0$. $\qquad\blacksquare$</p>
+</article></body></html>

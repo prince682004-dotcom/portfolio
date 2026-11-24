@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prince · Mathematics, IIT Bombay</title>
+<meta name="description" content="Personal academic website of Prince, M.Sc. Mathematics student at IIT Bombay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="nav">
+  <a href="#top" class="brand">Prince</a>
+  <nav>
+    <a href="#about">About</a><a href="#education">Education</a><a href="#research">Research</a>
+    <a href="#writing">Writing</a><a href="#library">Library</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="envelope" aria-hidden="true"></canvas>
+  <div class="hero-text">
+    <h1>Prince</h1>
+    <p class="lead">M.Sc. Mathematics, Indian Institute of Technology Bombay</p>
+    <p class="sub">Analysis, algebra and the geometry that sits between them.</p>
+  </div>
+  <p class="caption">The lines <span class="m" data-tex="y = tx - t^3"></span> sweep out the curve <span class="m" data-tex="27y^2 = 4x^3"></span>. Scroll to draw more of them.</p>
+</section>
+
+<svg class="divider" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C150 -10 250 70 400 30 S650 -10 800 30 S1050 70 1200 30"/></svg>
+
+<section id="about" class="wrap split">
+  <div class="photo"><img src="assets/img/profile.jpg" alt="Portrait of Prince" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'P'}))"></div>
+  <div>
+    <h2 class="reveal-title">About</h2>
+    <p>I am an M.Sc. Mathematics student at IIT Bombay (2025–), preparing for PhD admissions. I qualified IIT JAM Mathematics twice and finished with an all-India rank of 73 in 2025.</p>
+    <p>My coursework spans real and functional analysis, measure theory, algebra and Galois theory, topology, differential equations and numerical analysis. Earlier I wrote a research project on systems of linear equations and worked on a formula for the envelope of a family of cubics.</p>
+    <ul class="chips" id="courses"></ul>
+  </div>
+</section>
+
+<section id="education" class="wrap">
+  <h2 class="reveal-title">Education</h2>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<section id="achievements" class="band">
+  <div class="wrap">
+    <h2 class="reveal-title">Examinations and recognition</h2>
+    <ul class="rows" id="achievements-list"></ul>
+  </div>
+</section>
+
+<section id="research" class="wrap">
+  <h2 class="reveal-title">Research</h2>
+  <div class="cols">
+    <div><h3>Projects</h3><div id="projects"></div></div>
+    <div><h3>Papers and preprints</h3><div id="papers"></div></div>
+  </div>
+  <h3>Talks and seminars attended</h3><div id="talks"></div>
+</section>
+
+<section id="writing" class="band">
+  <div class="wrap">
+    <h2 class="reveal-title">Writing</h2>
+    <div class="cols">
+      <div><h3>Mathematical notes</h3><div id="blogs"></div></div>
+      <div><h3>Thoughts</h3><div id="thoughts"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="library" class="wrap">
+  <h2 class="reveal-title">Library</h2>
+  <p class="muted">Notes, CV and reports as PDFs.</p>
+  <div id="pdfs"></div>
+</section>
+
+<section id="gallery" class="wrap">
+  <h2 class="reveal-title">Gallery</h2>
+  <div class="gallery" id="gallery-grid"></div>
+</section>
+
+<section id="contact" class="band dark">
+  <div class="wrap">
+    <h2 class="reveal-title">Contact</h2>
+    <p><a class="big" href="mailto:25n0266@iitb.ac.in">25n0266@iitb.ac.in</a></p>
+    <p id="links"></p>
+    <p class="muted small">Indian Institute of Technology Bombay, Mumbai</p>
+  </div>
+</section>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="assets/js/data.js"></script>
+<script defer src="assets/js/main.js"></script>
+</body>
+</html>
